@@ -1,0 +1,140 @@
+.technology{
+    background-image: url('./assets/technology/background-technology-desktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    min-height: 100vh;
+    min-width: fit-content;
+}
+
+.technology-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+}
+
+.technology-left-content .title{
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.technology-left-content{
+    padding-left: 35%;
+}
+
+.title{
+    margin-bottom: 30%;
+}
+
+.content{
+    display: flex;
+}
+
+.select div{
+    position: relative;
+    font-size: 30px;
+    color: #fff;
+    border: solid 1px;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.select div:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.number{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.content .text{
+    margin-left: 50px;
+}
+
+.content p{
+    margin: 0;
+    opacity: 0.5;
+}
+
+.content .lead{
+    opacity: 1;
+    font-size: 40px;
+    font-family: Bellefair;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    white-space: nowrap;
+}
+
+.content .info{
+    line-height: 25px;
+}
+
+.technology-right-content img{
+    height: 60%;
+    position: absolute;
+    top: 25%;
+    right: 0;
+}
+
+@media(max-width: 1160px){
+    .technology-content{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .terminology{
+        display: none;
+    }
+
+    .technology-left-content .title{
+        display: none;
+    }
+
+    .technology-right-content img{
+        position: static;
+        width: 100%;
+        margin: 100px 0 30px 0;
+    }
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .select{
+        display: flex;
+    }
+
+    .select div{
+        margin-right: 10px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .content .text{
+        margin: 0;
+        text-align: center;
+        max-width: 450px;
+    }
+
+    .technology-left-content{
+        padding: 0;
+    }
+
+    .technology-right-content{
+        width: 100%;
+    }
+}
+
+@media(max-width: 450px){
+    .content .text{
+        max-width: 330px;
+    }
+}

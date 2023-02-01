@@ -1,0 +1,33 @@
+#menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    backdrop-filter: blur(35px);
+    color: #fff;
+    height: 100%;
+    width: 80%;
+    display: none;
+}
+
+#menu ul{
+    margin-top: 100px;
+}
+
+#menu ul li{
+    font-size: 15px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+#close{
+    width: 25px;
+    margin-top: 20px;
+    margin-left: 80%;
+    cursor: pointer;
+}
+
+@media(max-width: 630px){
+    #menu{
+        display: initial;
+    }
+}

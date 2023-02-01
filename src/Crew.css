@@ -1,0 +1,124 @@
+.crew{
+    background-image: url('./assets/crew/background-crew-desktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    min-height: 100vh;
+}
+
+.crew-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.crew-left-content{
+    padding-left: 35%;
+}
+
+.crew-content p{
+    margin: 0;
+}
+
+.crew-content .title{
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.crew-content img{
+    height: 450px;
+    position: relative;
+    top: 35%;
+    left: 10%;
+}
+
+.crew-left-content .role{
+    font-size: 25px;
+    opacity: 0.5;
+    font-family: Bellefair;
+    margin-bottom: 20px;
+}
+
+.crew-left-content .name{
+    font-size: 50px;
+    font-family: Bellefair;
+    margin-bottom: 30px;
+}
+
+.crew-left-content .text{
+    opacity: 0.5;
+}
+
+.carousel{
+    display: flex;
+    margin-top: 50px;
+    position: fixed;
+}
+
+.circle{
+    border-radius: 50%;
+    background-color: #fff;
+    width: 12px;
+    height: 12px;
+    margin-right: 15px;
+    opacity: 0.1;
+}
+
+.circle:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+@media(max-width:1030px){
+    .crew-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .crew-content .title{
+        display: none;
+    }
+
+    .crew-left-content{
+        padding: 0;
+    }
+
+    .crew-content img{
+        height: 300px;
+        position: static;
+        margin-top: 20px;
+    }
+
+    .crew-left-content .role,
+    .crew-left-content .name,
+    .crew-left-content .text{
+        width: fit-content;
+        text-align: center;
+    }
+
+    .crew-left-content .name{
+        margin: 0 auto;
+    }
+
+    .carousel{
+        position: static;
+        width: fit-content;
+        margin: 20px auto;
+    }
+
+    .crew-left-content .text{
+        max-width: 500px;
+    }
+
+    .crew-left-content .role{
+        margin: 20px auto;
+    }   
+}
+
+@media(max-width: 530px){
+    .crew-left-content .name{
+        max-width: 500px;
+        font-size: 40px;
+    }
+}
